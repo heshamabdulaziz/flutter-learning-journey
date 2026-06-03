@@ -20,3 +20,6 @@ flutter is crossplateform framwork built by dart program
 every thing in flutter widget
 
 - runApp() is a funcation that flutter app start from it
+  // i flutter there are two main widgets
+  - statalesswidget
+  - statafulwidget
