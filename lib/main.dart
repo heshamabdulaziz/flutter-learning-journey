@@ -15,9 +15,17 @@ class Myapp extends StatelessWidget {
         body: Text(
           'first stateless widget ',
           style: TextStyle(
-            color: Colors.red,
+            /*
+            there way to add value for color
+            color: Colors.color, for exmp color: Colors.red,
+            color: Colors.color[], for exmp color: Colors.red[700],
+            color: Color(0xff color code),
+
+            */
+            color: Colors.white,
             fontSize: 30,
             fontWeight: FontWeight.bold,
+            backgroundColor: Colors.red[400],
           ),
         ),
       ),

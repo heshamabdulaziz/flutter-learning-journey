@@ -23,3 +23,12 @@ every thing in flutter widget
   // i flutter there are two main widgets
   - statalesswidget
   - statafulwidget
+
+  # flutter widgets
+
+  1- Text(" txt",properties) use to show text
+  properties
+  style: TextStyle(
+  color: Colors.red, // to chang color
+  fontSize: 30,
+  fontWeight: FontWeight.bold,)
