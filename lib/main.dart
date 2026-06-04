@@ -13,14 +13,34 @@ class Myapp extends StatelessWidget {
       home: Scaffold(
         appBar: AppBar(title: Text("First app")),
         body: Container(
-          padding: EdgeInsets.only(left: 50),
-          color: Colors.lightBlue,
-          width: double.infinity,
-          height: double.infinity,
+          padding: EdgeInsets.only(left: 0),
+
+          width: 300,
+          height: 300,
           alignment: Alignment.center,
-          margin: EdgeInsets.symmetric(horizontal: 20),
+          margin: EdgeInsets.only(left: 30, top: 30),
+          decoration: BoxDecoration(
+            color: Colors.green,
+
+            borderRadius: BorderRadius.all(Radius.circular(200)),
+            border: Border.all(color: Colors.black, width: 10),
+            boxShadow: [
+              BoxShadow(
+                color: Colors.blueAccent,
+                offset: Offset(-10, 20),
+                spreadRadius: 10,
+                blurRadius: 20,
+              ),
+              BoxShadow(
+                color: Colors.deepOrangeAccent,
+                offset: Offset(15, -20),
+                spreadRadius: 10,
+                blurRadius: 20,
+              ),
+            ],
+          ),
           child: Text(
-            'Container ',
+            'Hesham',
             style: TextStyle(
               /*
             there way to add value for color

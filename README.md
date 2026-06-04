@@ -22,3 +22,13 @@ every thing in flutter widget
   color: Colors.red, // to chang color
   fontSize: 30,
   fontWeight: FontWeight.bold,)
+  2- container(child:widget,properties)
+  properties
+  color, we can not use color outside decoration if there decoration
+  width,hieght,
+  decoration: BoxDecoration(
+  borderRadius,
+  border,
+  spreadRadius:Use to resize or enlarge the shadow,
+  blurRadius: Use to control shadow visibility ,
+  )
