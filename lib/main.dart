@@ -42,11 +42,16 @@ class Myapp extends StatelessWidget {
             ],
           ),
 
-          child: Image.network(
+          /*
+          Add photo from net
+          Image.network(
             width: 200,
             height: 200,
             "https://tse4.mm.bing.net/th/id/OIP.eoUiAM2cKqc9jjUWLB5lvQHaHa?r=0&rs=1&pid=ImgDetMain&o=7&rm=3",
           ),
+
+          */
+          child: Image.asset("images/OIP.jpg", width: 200, fit: BoxFit.cover),
         ),
       ),
     );
