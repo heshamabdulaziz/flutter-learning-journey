@@ -32,3 +32,7 @@ every thing in flutter widget
   spreadRadius:Use to resize or enlarge the shadow,
   blurRadius: Use to control shadow visibility ,
   )
+  3 -image widget use to add image to app
+  there are two ways
+  - from network()
+    -from asset()

@@ -7,6 +7,8 @@ void main() {
 // StatelessWidget contain build funcatin type of widgit
 
 class Myapp extends StatelessWidget {
+  const Myapp({super.key});
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -39,21 +41,11 @@ class Myapp extends StatelessWidget {
               ),
             ],
           ),
-          child: Text(
-            'Hesham',
-            style: TextStyle(
-              /*
-            there way to add value for color
-            color: Colors.color, for exmp color: Colors.red,
-            color: Colors.color[], for exmp color: Colors.red[700],
-            color: Color(0xff color code),
 
-            */
-              color: Colors.white,
-              fontSize: 30,
-              fontWeight: FontWeight.bold,
-              backgroundColor: Colors.red[400],
-            ),
+          child: Image.network(
+            width: 200,
+            height: 200,
+            "https://tse4.mm.bing.net/th/id/OIP.eoUiAM2cKqc9jjUWLB5lvQHaHa?r=0&rs=1&pid=ImgDetMain&o=7&rm=3",
           ),
         ),
       ),
