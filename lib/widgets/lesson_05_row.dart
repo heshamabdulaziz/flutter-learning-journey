@@ -9,14 +9,21 @@ class Lesson05Row extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return SingleChildScrollView(
+      scrollDirection: Axis.horizontal,
       physics: BouncingScrollPhysics(),
-      child: Column(
-        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-        children: [
-          Lesson01Text(txt: "Text widget", txtColor: Colors.redAccent),
-          Lesson02Container(),
-          Lesson03Image(),
-        ],
+      child: Container(
+        height: double.infinity,
+        width: 800,
+        child: Row(
+          mainAxisAlignment: MainAxisAlignment.start,
+          crossAxisAlignment: CrossAxisAlignment.center,
+          children: [
+            Lesson03Image(),
+            Lesson01Text(txt: "Text widget", txtColor: Colors.redAccent),
+            Lesson02Container(),
+            Lesson03Image(),
+          ],
+        ),
       ),
     );
   }
