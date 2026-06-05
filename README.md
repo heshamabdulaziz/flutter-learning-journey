@@ -36,3 +36,16 @@ every thing in flutter widget
   there are two ways
   - from network()
     -from asset()
+
+4- Column widget in Flutter is used to arrange widgets vertically from top to bottom.
+for example
+Column(
+children: [
+Text('First'),
+Text('Second'),
+Text('Third'),
+],
+)
+column properties
+mainAxisAlignment Controls the vertical alignment of the children.(in axil Y)
+crossAxisAlignment Controls the horizontal alignment of the children. (in axil X)
