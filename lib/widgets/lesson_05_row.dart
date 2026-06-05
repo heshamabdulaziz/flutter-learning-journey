@@ -13,10 +13,10 @@ class Lesson05Row extends StatelessWidget {
       physics: BouncingScrollPhysics(),
       child: Container(
         height: double.infinity,
-        width: 800,
+        width: 1500,
         child: Row(
           mainAxisAlignment: MainAxisAlignment.start,
-          crossAxisAlignment: CrossAxisAlignment.center,
+          crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Lesson03Image(),
             Lesson01Text(txt: "Text widget", txtColor: Colors.redAccent),

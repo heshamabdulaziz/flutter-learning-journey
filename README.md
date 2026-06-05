@@ -51,3 +51,5 @@ mainAxisAlignment Controls the vertical alignment of the children.(in axil Y)
 crossAxisAlignment Controls the horizontal alignment of the children. (in axil X)
 #when we add more than widgt there are yellow line show in screan
 the sulation is wrap the colunm inside SingleChildScrollView widget
+
+#Row widget the same of colunm but show widgets or moe in horazontal axis
