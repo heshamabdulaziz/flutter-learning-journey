@@ -6,11 +6,11 @@ class Lesson03Image extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      width: 300,
-      height: 300,
+      width: 200,
+      height: 200,
 
       color: Colors.amber,
-      margin: EdgeInsets.only(left: 30, top: 30),
+
       /*
           Add photo from net
           Image.network(

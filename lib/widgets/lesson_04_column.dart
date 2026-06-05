@@ -8,22 +8,18 @@ class Lesson04Column extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return SingleChildScrollView(
-      physics: BouncingScrollPhysics(),
+    return Container(
+      width: 500,
+      color: Colors.grey,
       child: Column(
-        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+        mainAxisAlignment:
+            MainAxisAlignment.spaceAround, //main Control in axil Y
+        crossAxisAlignment: CrossAxisAlignment.center, //main Control in axil X
+        mainAxisSize: MainAxisSize.max,
+
         children: [
           Lesson01Text(txt: "Text widget", txtColor: Colors.redAccent),
-          Lesson01Text(
-            txt: "  welecom to learn flutter",
-            txtColor: Colors.black,
-          ),
-          SizedBox(height: 20),
-
-          Lesson01Text(txt: "Container widget", txtColor: Colors.redAccent),
           Lesson02Container(),
-          SizedBox(height: 20), // use to make space between widgets
-          Lesson01Text(txt: "Image widget", txtColor: Colors.redAccent),
           Lesson03Image(),
         ],
       ),
