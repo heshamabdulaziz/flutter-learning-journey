@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_learning_journey/widgets/lesson_01_text.dart';
 
 class Lesson02Container extends StatelessWidget {
   const Lesson02Container({super.key});
@@ -42,7 +43,7 @@ class Lesson02Container extends StatelessWidget {
           ),
 
           */
-      child: Image.asset("images/OIP.jpg", width: 200, fit: BoxFit.cover),
+      child: Lesson01Text(txt: "Container", txtColor: Colors.redAccent),
     );
   }
 }
