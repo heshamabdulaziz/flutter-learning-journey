@@ -8,21 +8,32 @@ class Lesson07listview extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return ListView(
-      children: [
-        Lesson03Image(),
-        Lesson01Text(txt: "Text widget", txtColor: Colors.redAccent),
-        Lesson02Container(),
-        Lesson03Image(),
-        Lesson03Image(),
-        Lesson01Text(txt: "Text widget", txtColor: Colors.redAccent),
-        Lesson03Image(),
-        Lesson01Text(txt: "Text widget", txtColor: Colors.redAccent),
-        Lesson02Container(),
-        Lesson03Image(),
-        Lesson03Image(),
-        Lesson01Text(txt: "Text widget", txtColor: Colors.redAccent),
-      ],
+    return Container(
+      height: 200,
+      child: ListView(
+        // we use  to show list of widgets  herozantally or vertically with scrol
+        scrollDirection: Axis.horizontal,
+        children: [
+          Lesson03Image(),
+          Lesson01Text(txt: "Text widget", txtColor: Colors.redAccent),
+          Divider(color: Colors.green, thickness: 15),
+          Lesson02Container(),
+          Divider(color: Colors.green, thickness: 15),
+          Lesson03Image(),
+          Divider(color: Colors.green, thickness: 15),
+          Lesson03Image(),
+          Divider(color: Colors.green, thickness: 15),
+          Lesson01Text(txt: "Text widget", txtColor: Colors.redAccent),
+          Divider(color: Colors.green, thickness: 15),
+          Lesson03Image(),
+          Divider(color: Colors.green, thickness: 15),
+          Lesson01Text(txt: "Text widget", txtColor: Colors.redAccent),
+          Lesson02Container(),
+          Lesson03Image(),
+          Lesson03Image(),
+          Lesson01Text(txt: "Text widget", txtColor: Colors.redAccent),
+        ],
+      ),
     );
   }
 }

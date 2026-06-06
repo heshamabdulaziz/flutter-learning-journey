@@ -55,3 +55,5 @@ the sulation is wrap the colunm inside SingleChildScrollView widget
 #Row widget the same of colunm but show widgets or moe in horazontal axis
 #listview is widget accept list of widgets with making scroll
 listview properties
+
+- scrollDirection: Axis.horizontal or vertical,
