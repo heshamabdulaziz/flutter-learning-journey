@@ -62,7 +62,7 @@ class Lesson08listview_builder extends StatelessWidget {
       child: ListView.builder(
         itemCount: users.length,
         itemBuilder: (context, i) {
-          print(i);
+          // ListTile widget
           return ListTile(
             title: Text(users[i]['name']),
             subtitle: Text(users[i]['lastName']),
