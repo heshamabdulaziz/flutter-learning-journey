@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_learning_journey/widgets/lesson_06_wrap.dart';
+import 'package:flutter_learning_journey/widgets/lesson_07_listview.dart';
 import 'widgets/lesson_01_text.dart';
 
 void main() {
@@ -18,7 +18,7 @@ class Myapp extends StatelessWidget {
         appBar: AppBar(
           title: Lesson01Text(txt: "First App", txtColor: Colors.black),
         ),
-        body: Lesson06Wrap(),
+        body: Lesson07listview(),
       ),
     );
   }
