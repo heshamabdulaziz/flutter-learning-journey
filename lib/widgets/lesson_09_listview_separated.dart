@@ -1,12 +1,13 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_learning_journey/widgets/lesson_01_text.dart';
 
-class Lesson08listview_builder extends StatelessWidget {
-  Lesson08listview_builder({super.key});
+class Lesson09listview_separated extends StatelessWidget {
+  Lesson09listview_separated({super.key});
 
   // also we can retn list of data  for exmple list of users or employee
 
   final List<Map<String, dynamic>> users = [
-    {"name": "hesham", "lastName": "Abdulaziz", "age": 38},
+    {"name": "Hesham", "lastName": "Abdulaziz", "age": 38},
     {"name": "John", "lastName": "Smith", "age": 38},
     {"name": "Michael", "lastName": "Johnson", "age": 25},
     {"name": "Emily", "lastName": "Brown", "age": 30},
@@ -56,19 +57,28 @@ class Lesson08listview_builder extends StatelessWidget {
   */
   @override
   Widget build(BuildContext context) {
-    return Container(
-      child: ListView.builder(
-        itemCount: users.length,
-        itemBuilder: (context, i) {
-          // ListTile widget
-          return ListTile(
-            title: Text(users[i]['name']),
-            subtitle: Text(users[i]['lastName']),
-            leading: Icon(Icons.person),
-            trailing: Text(users[i]['age'].toString()),
-          );
-        },
-      ),
+    return ListView(
+      children: [
+        Lesson01Text(txt: "Empleyee", txtColor: Colors.red),
+        Container(
+          child: ListView.separated(
+            shrinkWrap: true,
+            physics: NeverScrollableScrollPhysics(),
+            separatorBuilder:
+                (context, index) => Divider(height: 10, color: Colors.pink),
+            itemCount: users.length,
+            itemBuilder: (context, i) {
+              // ListTile widget
+              return ListTile(
+                title: Text(users[i]['name']),
+                subtitle: Text(users[i]['lastName']),
+                leading: Icon(Icons.person),
+                trailing: Text(users[i]['age'].toString()),
+              );
+            },
+          ),
+        ),
+      ],
     );
   }
 }

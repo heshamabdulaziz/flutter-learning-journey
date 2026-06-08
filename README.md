@@ -58,3 +58,4 @@ listview properties
 
 - scrollDirection: Axis.horizontal or vertical,
   #ListView.builder =ListView + loop
+  # Listview separated =ListView.builder + separated widget for exmple we ca return sizebox or divider or.....ect
